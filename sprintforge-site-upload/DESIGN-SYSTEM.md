@@ -1,10 +1,10 @@
-# SprintForge Design System
+# ClozingSystem · Direction visuelle de la landing page
 
-Référence visuelle extraite de la landing page Aura Builder. Les valeurs sont des repères à réutiliser, pas des contraintes absolues.
+La landing page conserve la structure générale du site de départ, avec une identité adaptée à ClozingSystem. Références : le site ClozingSystem et la présentation de marque fournie par Maxime.
 
 ## Identité
 
-- **Ambiance :** studio produit haut de gamme, surfaces claires légèrement grises, contrastes noirs et touches orange-rouge.
+- **Ambiance :** directe, affirmée et haut de gamme ; bleu nuit, crème et rouge, avec un accent or.
 - **Formes :** grandes capsules pour les boutons et badges, cartes très arrondies (24 à 40 px), bordures discrètes.
 - **Profondeur :** ombres diffuses, reflets blancs internes, fonds translucides avec flou pour la navigation.
 
@@ -12,23 +12,25 @@ Référence visuelle extraite de la landing page Aura Builder. Les valeurs sont 
 
 | Rôle | Valeur | Usage |
 | --- | --- | --- |
-| Fond global | `#ECEDEE` | Fond de page |
-| Surface claire | `#F4F5F5` | Hero, fonds secondaires |
-| Surface chaude | `#F7F7F5` | Panneaux et zones mises en avant |
+| Fond global | `#F6F3ED` | Fond de page crème |
+| Surface sombre | `#10243E` | Hero et panneaux principaux |
+| Surface chaude | `#FFFFFF` | Cartes et zones de lecture |
 | Blanc | `#FFFFFF` | Cartes et champs |
-| Encre | `#171719` | Boutons principaux et panneaux sombres |
-| Titres | `#2E3034` | Titres sur fond clair |
-| Texte secondaire | `#55575C` | Paragraphes et navigation |
-| Texte discret | `#8A8C91` | Métadonnées, légendes |
-| Accent | `#E34A32` | Liens, icônes et repères principaux |
-| Accent lumineux | `#F05A3C` | Dégradés et accent sur fond sombre |
+| Encre | `#101B2D` | Boutons et panneaux sombres |
+| Titres | `#101B2D` | Titres sur fond clair |
+| Texte secondaire | `#536174` | Paragraphes et navigation |
+| Texte discret | `#748092` | Métadonnées, légendes |
+| Accent | `#ED3025` | Logo, liens, icônes et repères |
+| Accent lumineux | `#FF5144` | Dégradés et accent sur fond sombre |
+| Or | `#F2C450` | Accent du titre principal |
 
 Variables disponibles dans `src/styles/global.css` : `--bg`, `--surface`, `--paper`, `--ink`, `--heading`, `--muted`, `--quiet`, `--accent` et `--accent-light`.
 
 ## Typographie
 
-- **Inter** pour l’interface, les paragraphes, les libellés et les titres standards. Graisses utilisées : 400, 500, 600 et 700.
-- **Instrument Serif** en italique pour un accent expressif dans le titre du hero.
+- **DM Sans** pour l’interface et les paragraphes.
+- **Archivo Black** pour le titre principal et les accents de marque.
+- **IBM Plex Mono** pour les repères courts et les libellés techniques.
 - Titres fortement resserrés (`letter-spacing` proche de `-0.05em`), interligne compact de 1.0 à 1.1.
 - Paragraphes : 14 à 18 px, interligne de 1.6 à 1.75.
 - Les petites légendes sont en 10 à 13 px, parfois en capitales avec espacement des lettres.
@@ -56,6 +58,12 @@ Variables disponibles dans `src/styles/global.css` : `--bg`, `--surface`, `--pap
 - Navigation flottante : capsule blanche translucide, `backdrop-filter: blur`, liens discrets ; menu mobile repliable.
 - Respecter `prefers-reduced-motion`; privilégier de petites transitions et animations d’apparition non essentielles.
 - Conserver un contraste lisible, des libellés accessibles et une hiérarchie sémantique des titres.
+
+## Marque et contenu
+
+- Le nom affiché est **ClozingSystem** ; le pictogramme est un C rouge sur fond bleu nuit.
+- Ton : direct, sans promesse chiffrée inventée ni faux témoignage, client ou coordonnées.
+- Axe : sortir des formations de vente standards, travailler mental et technique sur le terrain, concentrer l’effort sur les profils à fort potentiel de progression.
 
 ## Responsive
 

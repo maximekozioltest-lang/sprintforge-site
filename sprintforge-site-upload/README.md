@@ -1,4 +1,4 @@
-# SprintForge
+# ClozingSystem
 
 Site vitrine construit avec Astro, rendu statiquement dans `dist/`.
 
@@ -18,10 +18,10 @@ Le dépôt est prêt pour Cloudflare Pages en mode **Git integration** (projet s
 1. Installer Git, puis initialiser ce dossier : `git init`.
 2. Créer un dépôt GitHub vide et y pousser la branche principale (`main`).
 3. Dans Cloudflare, aller dans **Workers & Pages → Create application → Pages → Connect to Git** et choisir le dépôt.
-4. Paramètres de build : **Framework preset** `Astro`, **Build command** `npm run build`, **Build output directory** `dist`, **Root directory** `/sprintforge-site-upload` (le dossier importé dans le dépôt).
+4. Paramètres de build : **Framework preset** `Astro`, **Build command** `npm run build`, **Build output directory** `dist`, **Root directory** `/`.
 5. Enregistrer. Cloudflare construit et publie les pushes, et crée des prévisualisations pour les pull requests.
 
-Les changements de la configuration Cloudflare nécessitent l’accès au compte et au dépôt GitHub concernés. Le formulaire de contact de cette version est une maquette sans backend : aucun envoi n’est effectué.
+Les changements de la configuration Cloudflare nécessitent l’accès au compte et au dépôt GitHub concernés. Les appels à l’action renvoient vers l’adresse courriel et la page de contact ClozingSystem.
 
 ## Structure
 
