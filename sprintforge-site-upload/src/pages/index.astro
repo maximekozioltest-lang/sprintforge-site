@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ContentSections from '../components/ContentSections.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+---
+<SiteLayout>
+  <div class="page-shell">
+    <Hero><Header /></Hero>
+    <ContentSections />
+    <SiteFooter />
+  </div>
+</SiteLayout>

@@ -1,0 +1,28 @@
+---
+const links = [['Services', '#services'], ['Work', '#work'], ['Packages', '#packages'], ['Contact', '#contact']];
+---
+<div class="nav-wrap">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="SprintForge home"><span class="brand-mark"><i></i><i></i></span><strong>SprintForge</strong></a>
+    <div class="nav-links">{links.map(([label, href]) => <a href={href}>{label}</a>)}</div>
+    <a class="button button-dark nav-cta" href="#contact">Book a Sprint <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    {links.map(([label, href]) => <a href={href}>{label}</a>)}
+    <a class="button button-dark" href="#contact">Book a Sprint</a>
+  </div>
+</div>
+<script>
+  const menuButton = document.querySelector<HTMLButtonElement>('.menu-button');
+  const mobileMenu = document.querySelector<HTMLElement>('#mobile-menu');
+  menuButton?.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!isExpanded));
+    mobileMenu?.toggleAttribute('hidden', isExpanded);
+  });
+  mobileMenu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+    mobileMenu.setAttribute('hidden', '');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  }));
+</script>
